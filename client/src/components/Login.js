@@ -24,6 +24,7 @@ export default function Login() {
           else
           {
             window.localStorage.setItem("idd",id)
+            window.localStorage.setItem("proj",data.proj)
             history.push('/login/home')
           }
       })
@@ -35,7 +36,7 @@ export default function Login() {
     <div className="Login">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="id">
-          <Form.Label>UserName</Form.Label>
+          <Form.Label>Project ID</Form.Label>
           <Form.Control
             autoFocus
             type="text"

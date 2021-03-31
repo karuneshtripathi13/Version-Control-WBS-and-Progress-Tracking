@@ -170,7 +170,7 @@ router.post('/login',async(req,res)=>{
     const file = await FileData.findOne({id:req.body.id,password:req.body.password});
     console.log(file.length)
     if(file.length!==0)
-    res.json({msg:true});
+    res.json({msg:true,proj:file.pname});
     else
     res.json({msg: false});
   }catch (err) {
