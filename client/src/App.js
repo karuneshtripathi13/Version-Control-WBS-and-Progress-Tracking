@@ -1,4 +1,5 @@
 import './App.css';
+import "./tracking.css"
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Upload from './components/Upload';
@@ -10,6 +11,8 @@ import Edit from "./components/Edit";
 import Previous from "./components/Previous";
 import Header1 from './components/Header1';
 import Register from './components/Register';
+import MainSideNav from './components/MainSideNav';
+
 import React, { useState } from "react";
 import {Fragment} from 'react'
 import { BrowserRouter as Router, Switch,Link, Route } from "react-router-dom";
@@ -37,6 +40,7 @@ function App() {
     } />
     <Route path='/login'>
       <Header/>
+      <MainSideNav/>
       <Route path="/login/addnew"><Upload idd={localStorage.getItem("idd")}/></Route>
       <Route path="/login/viewprev"><View idd={localStorage.getItem("idd")}/></Route>
       <Route path="/login/delete"><Delete idd={localStorage.getItem("idd")}/></Route>

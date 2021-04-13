@@ -5,7 +5,7 @@ import "./Sidenav.css";
 import './Button'
 const Header1 = ({title}) => {
     return (
-        <header>
+        <header id="header1">
             <h1>{title}</h1>
         </header>
     )
