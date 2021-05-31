@@ -1,4 +1,10 @@
 /* menu */
+h1{
+    justify-content: center;
+    background-color: grey;
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+  }
 #faa{
   position: relative;
     display: table-cell;
@@ -136,3 +142,67 @@ nav ul,nav li {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+/* circle progress */
+.wrapper{
+    width: 10cm;
+    margin: 0 auto;
+}
+.progress-area{
+    width: 30%;
+    margin-left: 4cm;
+    margin-top: 2cm;
+    float: left;
+    text-align: center;
+}
+.circle{
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-decoration: underline;
+  width: 7cm;
+  display: flex;
+  
+}
+.graph{
+  margin:0.5cm 0 0 3.5cm;
+
+}
+.addTask{
+  padding: 5px 10px 5px 10px  ;
+  background-color: grey;
+  color: rgb(0, 0, 0);
+  border: black 2.5px solid;
+  border-radius: 5px;
+}
+.addTask:hover{
+  background-color: black;
+  color: white;
+}
+.chart{
+  /* margin-top: 10px; */
+  
+  font-size: 30px;
+  text-decoration: underline;
+  /* background-color: rgb(194, 193, 193); */
+}
+#chart{
+  margin-top: 0px;
+}
+.form{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin: 30% 5% 0 0;
+}
+.submit{
+  width: 100px ;
+  background-color: grey;
+  border: black 2px solid;
+  padding: 6px;
+}
+.graph {
+    float: left; margin-right: 10px;
+  }
+.graph p { 
+    text-align: center;
+  }

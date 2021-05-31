@@ -20,7 +20,7 @@ export default function Login() {
         'Accept': 'application/json','Content-Type': 'application/json'}}).then((response)=>response.json()).then((data)=>{
           console.log(data.msg);
           if(!data.msg)
-          alert('No Such User found')
+          alert('No Such Project found')
           else
           {
             window.localStorage.setItem("idd",id)

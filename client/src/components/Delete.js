@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Fragment, useState,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 
 const Delete = ({ idd }) => {
   const [post, setPost] = useState([])
@@ -23,7 +23,7 @@ const Delete = ({ idd }) => {
     window.location.reload()
   }
   const getfileData=(val)=>{
-    if(id!="")
+    if(id!=="")
     {
       document.getElementById(id).className="hidden"
       setCont("")
@@ -61,7 +61,7 @@ const Delete = ({ idd }) => {
     <div>
         {useEffect(() => {
         getBlogPost()
-        }, [])}    
+        })}    
         <Link to='/login/home' className='btn'>Back</Link><br/>
       {(post.length===0)?((<div className="hidden"></div>)):(
       <ul className="delete">

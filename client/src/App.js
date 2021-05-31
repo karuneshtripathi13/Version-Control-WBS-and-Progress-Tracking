@@ -1,5 +1,6 @@
 import './App.css';
 import "./tracking.css"
+import "./circle.css"
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Upload from './components/Upload';
@@ -12,11 +13,15 @@ import Previous from "./components/Previous";
 import Header1 from './components/Header1';
 import Register from './components/Register';
 import MainSideNav from './components/MainSideNav';
+import WBS from './components/WBS';
+import Tracking from './components/Tracking';
+import Header2 from './components/Header2';
+import Header3 from './components/Header3';
+
 
 import React, { useState } from "react";
 import {Fragment} from 'react'
-import { BrowserRouter as Router, Switch,Link, Route } from "react-router-dom";
-import { set } from 'mongoose';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   const [idd, setIdd] = useState("");
   const setLogin=(e)=>{
@@ -50,6 +55,8 @@ function App() {
         <Home idd={localStorage.getItem("idd")}/>
       </Route>
     </Route>
+    <Route path='/Tracking'><Header2/><MainSideNav/><Tracking/></Route>
+    <Route path='/WBS'><Header3/><MainSideNav/><WBS/></Route>
     <Footer/>
     </div>
     </Switch>

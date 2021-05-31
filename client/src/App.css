@@ -1,9 +1,9 @@
 .App {
   text-align: center;
 }
-body{
+body {
   background-color: #fff;
-  overflow:scroll;
+  overflow: scroll;
 }
 .App-logo {
   height: 40vmin;
@@ -30,7 +30,7 @@ body{
 .App-link {
   color: #61dafb;
 }
-header{
+header {
   background-color: grey;
   padding: 2%;
   padding-left: 4%;
@@ -39,13 +39,13 @@ header{
   text-align: center;
   align-items: center;
 }
-#header1{
-    background-color: grey;
-    padding: 2%;
-    margin-bottom: 2%;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
+#header1 {
+  background-color: grey;
+  padding: 2%;
+  margin-bottom: 2%;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
 }
 @keyframes App-logo-spin {
   from {
@@ -55,18 +55,18 @@ header{
     transform: rotate(360deg);
   }
 }
-.btn:hover{
-  background-color:rgb(185, 223, 255);
-  color:#000;
+.btn:hover {
+  background-color: rgb(185, 223, 255);
+  color: #000;
 }
-#file{
+#file {
   align-items: center;
   text-align: center;
 }
-#ip{
+#ip {
   display: none;
 }
-#ip+label{
+#ip + label {
   display: inline-block;
   background: #000;
   color: #fff;
@@ -79,14 +79,14 @@ header{
   font-size: 15px;
   font-family: inherit;
 }
-#ip+label:hover{
+#ip + label:hover {
   background-color: grey;
 }
-#logo{
-  width:7%;
-  height:7%;
+#logo {
+  width: 7%;
+  height: 7%;
 }
-#text{
+#text {
   background: #000;
   color: #fff;
   border: none;
@@ -97,9 +97,8 @@ header{
   text-decoration: none;
   font-size: 1vw;
   font-family: inherit;
-
 }
-#vbtn{
+#vbtn {
   display: block;
   width: 15vw;
   margin: 0;
@@ -111,7 +110,7 @@ header{
   margin-bottom: 0%;
   margin-top: 2.5%;
 }
-#data{
+#data {
   background-color: grey;
   border-radius: 2vw;
   width: min-content;
@@ -123,62 +122,61 @@ header{
   text-align: left;
   white-space: pre-wrap;
 }
-.hidden{
+.hidden {
   display: none;
 }
-.content{
+.content {
   padding: 1vw;
   width: 50vw;
   height: fit-content;
   white-space: pre-wrap;
   background-color: #fff;
 }
-#h11{
+#h11 {
   display: inline;
   margin-left: 7%;
 }
-#logout{
+#logout {
   float: right;
   padding: 1%;
   margin-right: 0;
   margin-left: 3%;
 }
-.text{
+.text {
   padding: 0.25%;
   margin: 0.25%;
 }
-#textbox{
+#textbox {
   width: 25%;
 }
-#dispmsg{
+#dispmsg {
   background-color: rgb(185, 223, 255);
   padding: 1%;
   font-weight: bold;
 }
-#new{
+#new {
   margin-left: 0%;
 }
-#wd{
+#wd {
   width: 20vw;
   display: inline;
 }
-#cont{
+#cont {
   padding: 1vw;
   width: 50vw;
   height: 50vw;
   white-space: pre-wrap;
-
 }
 .footer {
-  position:fixed;
+  position: fixed;
   margin-top: 5%;
-  bottom:0;
-  width:100%;
+  bottom: 0;
+  width: 100%;
   padding: 1vw;
-  height:4vw;
+  height: 4vw;
   background-color: gray;
 }
-.delete{
+.delete {
   min-width: 50vw;
   width: fit-content;
   background-color: grey;
@@ -190,15 +188,15 @@ header{
   margin-bottom: 7vw;
   white-space: pre-wrap;
 }
-#hamburger{
-float: left;
+#hamburger {
+  float: left;
 }
-#time{
+#time {
   margin-left: 15%;
   display: inline;
   font-weight: bold;
 }
-#version{
+#version {
   border-radius: 2vw;
   width: min-content;
   padding-right: 4%;
@@ -208,7 +206,7 @@ float: left;
   text-align: left;
   white-space: pre-wrap;
 }
-.verall{
+.verall {
   background-color: white;
   border-radius: 1vw;
   width: min-content;
@@ -219,7 +217,7 @@ float: left;
   text-align: left;
   white-space: pre-wrap;
 }
-#no-data{
+#no-data {
   background-color: white;
   padding: 2%;
   font-weight: bold;
@@ -230,6 +228,28 @@ float: left;
   text-align: center;
   border-radius: 0.2vw;
 }
-#logindet{
+#logindet {
   font-size: 1vw;
+}
+.sidebar-left {
+  height: 600px;
+}
+
+.main {
+  width: 300vw;
+}
+
+.container {
+  margin-left: 200px;
+  min-width: 1200px;
+  max-height: 500px;
+  display: flex;
+  top: 10px;
+  left: 0;
+  bottom: 10px;
+  right: 0;
+  text-align: left;
+}
+.mf-react-nodelistview{
+  min-height: 500px;
 }

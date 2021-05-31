@@ -261,8 +261,8 @@ router.delete("/:idd/:id", async (req, res) => {
     console.log(f2)
     res.json({msg:'File Successfully Deleted'});
   }
-  else
-  res.json({msg:'No Such file exists'});
+  // else
+  // res.json({msg:'No Such file exists'});
   } catch (err) {
     res.send("Error: " + err);
   }

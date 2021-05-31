@@ -14,7 +14,7 @@ app.use('/static', express.static('App.js'))
 app.use(fileUpload());
 //MONGODB
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/karu', {useNewUrlParser: true, useUnifiedTopology: true,  useFindAndModify: false});
+mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/karu', {useNewUrlParser: true, useUnifiedTopology: true,  useFindAndModify: false});
 
 
 const db = mongoose.connection;
@@ -29,4 +29,4 @@ app.use(express.json())
 const fileRouter=require('./routes/file')
 app.use('/file',fileRouter)
 
-app.listen(5000,()=>console.log('Server Started...'));
+app.listen( process.env.PORT ||5000,()=>console.log('Server Started...'));

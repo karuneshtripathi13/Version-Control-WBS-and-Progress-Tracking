@@ -18,16 +18,16 @@ function MainSideNav() {
               
             </li>
             <li class="has-subnav">
-                <a href="#">
+                <Link to='/WBS'>
                     <i class="fa fa-sitemap fa-2x" style={{fontSize:"2em"}} id="faa"></i>
                     <span class="nav-text">
                         WBS generation
                     </span>
-                </a>
+                </Link>
                 
             </li>
             <li class="has-subnav">
-                <a href="#">
+                <a href="/Tracking">
                     <i class="fa fa-bar-chart-o fa-2x" style={{fontSize:"2em"}} id="faa"></i>
                     <span class="nav-text">
                         Progress Tracking
