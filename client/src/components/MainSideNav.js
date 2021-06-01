@@ -21,7 +21,7 @@ function MainSideNav() {
                 <Link to='/WBS'>
                     <i class="fa fa-sitemap fa-2x" style={{fontSize:"2em"}} id="faa"></i>
                     <span class="nav-text">
-                        WBS generation
+                        WBS and UML
                     </span>
                 </Link>
                 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = ({ percentage }) => {
   return (
     <div className='footer'>
-        Copyrights Reserved &copy; kt 
+        All Rights Reserved Copyrights &copy; VIT 
     </div>
   );
 };

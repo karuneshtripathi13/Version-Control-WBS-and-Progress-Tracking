@@ -11,7 +11,7 @@ function Tracking() {
       if (pass == password) {
         //var name=document.getElementById('task').value;
         var name = window.prompt(
-          "Please enter the name of the Task(only Alphabets):"
+          "Please enter the name of the Task:"
         );
         if (name == "") {
           alert("You must enter a valid Task name! ");
@@ -56,8 +56,7 @@ function Tracking() {
       var percent = participant[i].points  + "%";
       bar.innerHTML = [
         '<p style="margin-top: ' + (parseInt(bar.style.height) - 17) + 'px">',
-        percent,
-        "<br />",
+        '<p style="background-color:lightgrey;border:solid navy 2px;margin:0;padding:0">',percent,'</p>',
         participant[i].name,
         "</p>",
       ].join("");

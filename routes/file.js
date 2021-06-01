@@ -134,8 +134,8 @@ router.post("/up/:id", async (req, res) => {
         }
       );
     }
-  }else
-  res.json({msg:"Please Logout and Login"})
+   }//else
+  // res.json({msg:"Please Logout and Login"})
   });
 });
 router.post('/reg',async(req,res)=>{
@@ -200,7 +200,7 @@ router.patch("/:id", async (req, res) => {
         return;
       }
     })
-    fs.writeFileSync(`D:/JAVA/version-ctrl/client/public/uploads/${req.body.id}/${file.data[index].name}(${file.data[index].prev.length + 1})`, dat, (err) => {
+    fs.writeFileSync(`D:/JAVA/version-ctrl/client/public/uploads/${req.body.id}/${file.data[index].name} (Version ${file.data[index].prev.length + 1})`, dat, (err) => {
       if (err)
         console.log('File Update Failed ' + err);
     });
@@ -209,7 +209,7 @@ router.patch("/:id", async (req, res) => {
       console.log('File Update Failed '+err)
       })
      await file.data[index].prev.push({
-        name:`${file.data[index].name}(${file.data[index].prev.length+1})`,
+        name:`${file.data[index].name} (Version ${file.data[index].prev.length+1})`,
         msg:msg,
         time:"Time: "+file.data[index].time+"   "+"Date: "+file.data[index].date
         })

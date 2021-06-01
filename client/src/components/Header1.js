@@ -11,6 +11,6 @@ const Header1 = ({title}) => {
     )
 }
 Header1.defaultProps={
-    title:'Version Control',
+    title:'Version Control, UML & Tracking System',
 }
 export default Header1

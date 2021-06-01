@@ -1,5 +1,5 @@
 import java.util.*;
-abstract class Doctor {12
+abstract class Doctor {
     int doc_ID;
     char doc_name[]=new char[30];
     float yrs_exp;
