@@ -7,16 +7,15 @@ import { BrowserRouter as Router, Route, Switch,Redirect,Link } from "react-rout
 
 
 const Upload = ({idd}) => {
-    const [file, setFile] = useState('');
-    const [upload,setupload]=useState({})
+    const [file, setFile] = useState({});
+    const [upload,setupload]=useState('')
     const [message,setmessage]=useState('')
     const [uploadPercentage, setUploadPercentage] = useState(0);
 
 
     function onChange(e){
         setFile(e.target.files[0]);
-        console.warn("data file",file);
-        console.log(e.target);
+        console.log(e.target.files[0]);
         setupload(file.name)
     }
     async function onFileUpload(e) {

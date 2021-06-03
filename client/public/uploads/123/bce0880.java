@@ -1,9 +1,8 @@
 import java.util.*;
 
-interface test1fchfgtctjftg
+interface test1
 {
 int square(int a);
-\';./,fncm h,vhmv
 }
 class arithmetic implements test1
 {
