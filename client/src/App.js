@@ -46,7 +46,7 @@ function App() {
     <Route path='/login'>
       <Header/>
       <MainSideNav/>
-      <Route path="/login/addnew"><Upload idd={localStorage.getItem("idd")}/></Route>
+      <Route path="/login/addnew"><Upload/></Route>
       <Route path="/login/viewprev"><View idd={localStorage.getItem("idd")}/></Route>
       <Route path="/login/delete"><Delete idd={localStorage.getItem("idd")}/></Route>
       <Route path="/login/edit"><Edit idd={localStorage.getItem("idd")}/></Route>

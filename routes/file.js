@@ -51,7 +51,7 @@ router.get("/:id/:val", async (req, res) => {
 });
 router.get("/path/:id/:val", async (req, res) => {
   try {
-    path=`D:/JAVA/version-ctrl/client/public/uploads/${req.params.id}/${req.params.val}`
+    path=`${__dirname}/../client/public/uploads/${req.params.id}/${req.params.val}`
     console.log(path)
     const readData = fs.readFileSync(path, 'utf8');
     console.log("data read is: "+readData)
@@ -85,11 +85,11 @@ router.post("/up/:id", async (req, res) => {
     if (flag) {
       res.json({ msg: "File Already Exists. Please go to Edit file option." });
     } else {
-      if (!fs.existsSync(`D:/JAVA/version-ctrl/client/public/uploads/${req.params.id}`)){
-        fs.mkdirSync(`D:/JAVA/version-ctrl/client/public/uploads/${req.params.id}`);
+      if (!fs.existsSync(`${__dirname}/../client/public/uploads/${req.params.id}`)){
+        fs.mkdirSync(`${__dirname}/../client/public/uploads/${req.params.id}`);
     }
       file.mv(
-        `D:/JAVA/version-ctrl/client/public/uploads/${req.params.id}/${file.name}`,
+        `${__dirname}/../client/public/uploads/${req.params.id}/${file.name}`,
         async (err) => {
           if (err) {
             console.error(err);
@@ -115,7 +115,7 @@ router.post("/up/:id", async (req, res) => {
                 "/" +
                 obj.getFullYear(),
               type: file.mimetype,
-              path: `D:/JAVA/version-ctrl/client/public/uploads/${req.params.id}/${file.name}`,
+              path: `${__dirname}/../client/public/uploads/${req.params.id}/${file.name}`,
               msg:req.body.msg
             }
             try {
@@ -200,7 +200,7 @@ router.patch("/:id", async (req, res) => {
         return;
       }
     })
-    fs.writeFileSync(`D:/JAVA/version-ctrl/client/public/uploads/${req.body.id}/${file.data[index].name} (Version ${file.data[index].prev.length + 1})`, dat, (err) => {
+    fs.writeFileSync(`${__dirname}/../client/public/uploads/${req.body.id}/${file.data[index].name} (Version ${file.data[index].prev.length + 1})`, dat, (err) => {
       if (err)
         console.log('File Update Failed ' + err);
     });
@@ -244,7 +244,7 @@ router.delete("/:idd/:id", async (req, res) => {
     for(var i=0;i<f1.data[index].prev.length;i++)
     {
       try {
-        fs.unlinkSync(`D:/JAVA/version-ctrl/client/public/uploads/${req.params.idd}/`+f1.data[index].prev[i].name)
+        fs.unlinkSync(`${__dirname}/../client/public/uploads/${req.params.idd}/`+f1.data[index].prev[i].name)
         //file removed
       } catch(err) {
         console.error(err)

@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Switch,Redirect,Link } from "react-rout
 
 
 
-const Upload = ({idd}) => {
+const Upload = () => {
+    const idd=localStorage.getItem("idd")
     const [file, setFile] = useState({});
     const [upload,setupload]=useState('')
     const [message,setmessage]=useState('')
